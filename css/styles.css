@@ -493,3 +493,25 @@ button {
 .footer-social-icon {
   fill: var(--cloud);
 }
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.4));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal {
+  position: relative;
+  border-radius: 4px;
+  background: var(--DAIRY, #fcfcfc);
+  width: 408px;
+  height: 584px;
+}
+.modal-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  border-radius: 4px;
+}
