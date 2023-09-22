@@ -489,10 +489,31 @@
             </li>
           </ul>
         </div>
+        <div class="modal-window">
+          <p class="footer-modal-text">Subscribe</p>
+          <form action="footer-modal-form">
+            <label class="visually-hidden" for="email">E-mail</label>
+
+            <input
+              class="footer-modal-input"
+              id="email"
+              type="email"
+              name="email"
+              placeholder="E-mail"
+            />
+          </form>
+        </div>
+        <div class="modal-button-subcscribe">
+          <button class="hero-button footer-modal-button" type="submit">Subscribe 
+            <svg class="footer-modal-icon" width="24" height="24">
+              <use href="./images/symbol-defs.svg#icon-Frame"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </footer>
 
-    <div class="backdrop" data-modal>
+    <!-- <div class="backdrop" data-modal> -->
       <div class="modal">
         <button class="modal-close" type="button" data-modal-close>
           <svg class="modal-icon" width="8" height="8">
@@ -500,41 +521,41 @@
           </svg>
         </button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
-        <form
-          class="modal-form"
-          name="contact-form"
-          autocomplete="on"
-          novalidate
-        >
+        <form name="contact-form" autocomplete="on" novalidate>
           <div class="modal-field">
             <label class="modal-label" for="user-info">Name</label>
-            <svg class="cotact-icon" width="18" height="18">
-              <use href="./images/symbol-defs.svg#icon-person"></use>
-            </svg>
-            <input
-              class="modal-input name"
-              id="user-info"
-              type="text"
-              name="user-name"
-              autofocus
-            />
+            <div class="modal-input-wrap">
+              <input
+                class="modal-input name"
+                id="user-info"
+                type="text"
+                name="user-name"
+                autofocus
+              />
+              <svg class="modal-input-icon" width="18" height="18">
+                <use href="./images/symbol-defs.svg#icon-person"></use>
+              </svg>
+            </div>
           </div>
 
           <div class="modal-field">
             <label class="modal-label" for="phone">Phone</label>
-            <svg class="cotact-icon" width="18" height="24">
-              <use href="./images/symbol-defs.svg#icon-phone"></use>
-            </svg>
-            <input class="modal-input" id="phone" type="tel" name="phone" />
+            <div class="modal-input-wrap">
+              <input class="modal-input" id="phone" type="tel" name="phone" />
+              <svg class="modal-input-icon" width="18" height="24">
+                <use href="./images/symbol-defs.svg#icon-phone"></use>
+              </svg>
+            </div>
           </div>
 
           <div class="modal-field">
             <label class="modal-label" for="email">Email</label>
-
-            <svg class="contact-icon" width="18" height="24">
-              <use href="./images/symbol-defs.svg#icon-email"></use>
-            </svg>
-            <input class="modal-input" id="email" type="email" name="email" />
+            <div class="modal-input-wrap">
+              <input class="modal-input" id="email" type="email" name="email" />
+              <svg class="modal-input-icon" width="18" height="24">
+                <use href="./images/symbol-defs.svg#icon-email"></use>
+              </svg>
+            </div>
           </div>
 
           <div class="modal-field">
@@ -547,18 +568,24 @@
             ></textarea>
           </div>
 
-          <div>
-            <label class="visually-hidden" for="privacy-policy"
-              >I accept the terms and conditions of the Privacy Policy</label
-            >
+          <div class="modal-checkbox">
             <input
-              class="visually-hidden"
+              class="modal-checkbox-input visually-hidden"
               type="checkbox"
               id="privacy-policy"
             />
+            <span class="modal-checkbox-check">
+              <svg class="modal-checkbox-icon" width="16" height="16">
+                <use href="./images/symbol-defs.svg#icon-Property-click"></use>
+              </svg>
+            </span>
+            <label class="modal-checkbox-label" for="privacy-policy"
+              >I accept the terms and conditions of the
+              <a class="modal-checkbox-privacy" href="#">Privacy policy</a>
+            </label>
           </div>
 
-          <button class="form-button" type="submit">Send</button>
+          <button class="hero-button modal-button" type="submit">Send</button>
         </form>
       </div>
     </div>
