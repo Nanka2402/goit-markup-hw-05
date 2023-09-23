@@ -489,6 +489,7 @@
             </li>
           </ul>
         </div>
+        <!-- Footer modal window  -->
         <div class="modal-window">
           <p class="footer-modal-text">Subscribe</p>
           <form class="footer-modal-form" action="footer-modal-form">
@@ -510,6 +511,7 @@
         </div>
       </div>
     </footer>
+
     <!-- Modal window  -->
     <div class="backdrop" data-modal>
       <div class="modal">
@@ -518,19 +520,21 @@
             <use href="./images/symbol-defs.svg#icon-close"></use>
           </svg>
         </button>
+
         <p class="modal-title">Leave your contacts and we will call you back</p>
+
         <form name="contact-form" autocomplete="on" novalidate>
           <div class="modal-field">
-            <label class="modal-label" for="user-info">Name</label>
+            <label class="modal-label" for="user-name">Name</label>
             <div class="modal-input-wrap">
               <input
                 class="modal-input name"
-                id="user-info"
+                id="user-name"
                 type="text"
                 name="user-name"
                 autofocus
               />
-              <svg class="modal-input-icon" width="18" height="18">
+              <svg class="modal-input-icon" width="18" height="24">
                 <use href="./images/symbol-defs.svg#icon-person"></use>
               </svg>
             </div>
@@ -562,11 +566,11 @@
           </div>
 
           <div class="modal-field">
-            <label class="modal-label" for="coments">Coments</label>
+            <label class="modal-label" for="user-comment">Comments</label>
             <textarea
               class="modal-textarea"
-              name="coments"
-              id="coments"
+              name="user-comment"
+              id="user-comment"
               placeholder="Text input"
             ></textarea>
           </div>
@@ -575,16 +579,23 @@
             <input
               class="modal-checkbox-input visually-hidden"
               type="checkbox"
-              id="privacy-policy"
+              id="user-privacy"
+              value="true"
+              name="user-privacy"
             />
-            <span class="modal-checkbox-check">
-              <svg class="modal-checkbox-icon" width="16" height="16">
-                <use href="./images/symbol-defs.svg#icon-Property-click"></use>
-              </svg>
-            </span>
-            <label class="modal-checkbox-label" for="privacy-policy"
-              >I accept the terms and conditions of the
-              <a class="modal-checkbox-privacy" href="#">Privacy policy</a>
+            <label class="modal-checkbox-label" for="user-privacy"
+              >I accept the terms and conditions of the<a
+                class="modal-checkbox-privacy"
+                href="#"
+                >Privacy policy</a
+              >
+              <span class="modal-checkbox-check">
+                <svg class="modal-checkbox-icon" width="10" height="8">
+                  <use
+                    href="./images/symbol-defs.svg#icon-Property-click"
+                  ></use>
+                </svg>
+              </span>
             </label>
           </div>
 
